@@ -48,6 +48,11 @@
 	$nImgG = 0;
 	
 	//Lectura y almacenaje de las imagenes
+			/***
+	//Uso la lectura y almacenaje en este caso para poder 
+	//trabajar con imagenes a mostar, en otro caso podría 
+	//usarse las de la propia API
+			***/
 	foreach (new DirectoryIterator($images) as $fileInfo) {
 		if($fileInfo->isDot()) continue;
 		$a = $fileInfo->getFilename();
