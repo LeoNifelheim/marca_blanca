@@ -30,6 +30,7 @@
 		
 	</head>
 	<body>
+		<!-- reducción de codigo con requires (MVC) -->
 		<?php require($templates.'header.php');?>
 		<!-- termina HEADER -->
 		<div class="listado-chicas">
@@ -98,7 +99,7 @@
 				$imgSrc2 = $images.'/'.current($imgSrcG);
 				next($imgSrcG);				
 			}
-			
+			//URL para el pop-up
 			$urlToPass = $url.$thumbTop[$aux-1]->wbmerPermalink."/?nats=".$trackingCode;
 			//Lógica para mostrar la imagen a la derecha o a la izquierda de forma intermitente
 			if ( $j ){
@@ -143,6 +144,7 @@
 			<div class="clear"></div>
 			<a class="btn-mas-modelos" href="#" title="Mostrar más modelos">Siguiente Página</a>
 		</div>
+		<!-- reducción de codigo con requires (MVC) -->
 		<!-- termina LISTADO DE CHICAS -->
 		<?php require($templates.'footer.php');?>
 		<!-- termina MENU FOOTER -->
